@@ -10,7 +10,7 @@ type IConfig struct {
 	Notification NotificationInfo `yaml:"notification"`
 
 	// Git Associate
-	GitUserToken        string      `yaml:"gitUserToken"`
+	GitUserToken        []string      `yaml:"gitUserTokens"`
 	AggregatedModelRepo *RepoInfo   `yaml:"aggregatorModelRepo,omitempty"`
 	EdgeModelRepos      []*RepoInfo `yaml:"edgeModelRepos,omitempty"`
 	EdgeModelRepo       *RepoInfo   `yaml:"edgeModelRepo,omitempty"`
